@@ -10,9 +10,10 @@ nav {
     px-5
     py-3
     bg-gray-800
+    h-20
 }
 
-.navbar--login-btn {
+.navbar--all-movies-btn {
   @apply
     font-bold
     text-purple-400

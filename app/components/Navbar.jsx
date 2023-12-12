@@ -4,10 +4,7 @@ import Logo from './logo.png';
 import Image from 'next/image';
 
 const Navbar = () => {
-  const handleAuth = () => {
-
-  }
-
+  
   return (
     <nav>
       <Image
@@ -15,7 +12,7 @@ const Navbar = () => {
         alt='Purple letter P'
         width="50"
       />
-      <button className="navbar--login-btn">Log In</button>
+      <button className='navbar--all-movies-btn'>All Movies</button>
     </nav>
   );
 }
