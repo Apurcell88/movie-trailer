@@ -5,6 +5,7 @@ const raleway = Raleway({ subsets: ['latin'] })
 
 // components
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 export const metadata = {
   title: 'Zuru',
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body className={raleway.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )
