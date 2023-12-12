@@ -1,18 +1,21 @@
-"use client" // using this since button has onClick
-
 import Logo from './logo.png';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Navbar = () => {
   
   return (
     <nav>
-      <Image
-        src={Logo}
-        alt='Purple letter P'
-        width="50"
-      />
-      <button className='navbar--all-movies-btn'>All Movies</button>
+      <Link href='/'>
+        <Image
+          src={Logo}
+          alt='Purple letter P'
+          width="50"
+        />
+      </Link>
+      <Link href='/movies' className='navbar--link'>
+        <button className='navbar--all-movies-btn'>Popular Movies</button>
+      </Link>
     </nav>
   );
 }

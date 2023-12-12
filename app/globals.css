@@ -23,6 +23,12 @@ nav {
     left-0
 }
 
+.navbar--link {
+  @apply
+   flex
+   
+}
+
 .navbar--all-movies-btn {
   @apply
     font-bold
