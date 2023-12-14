@@ -1,23 +1,28 @@
-
-import { getAllMovies } from '../api/tmdb'
-// import { useState } from 'react';
+import { getAllMovies } from '../api/tmdb';
+import MovieCard from '../components/MovieCard';
 
 const Movies = async () => {
 
   const movies = await getAllMovies();
-  console.log(movies.results)
+  console.log(movies.results);
 
   return (
     <main>
-      <h1>All Movies</h1>
-      <ul>
+      <h1 className='movies--title'>Popular Movies</h1>
+      <article className='movies--popular-movies-container'>
         {movies.results.map((movie) => (
-          <li key={movie.id}>{movie.title}</li>
-          // we want a movie Card component
+          <MovieCard
+            key={movie.id}
+            title={movie.title}
+            overview={movie.overview}
+            image={movie.poster_path}
+            release={movie.release_date}
+            rating={movie.vote_average}
+          />
         ))}
-      </ul>
+      </article>
     </main>
   );
-}
+};
  
 export default Movies;

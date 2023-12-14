@@ -79,6 +79,59 @@ nav {
   text-gray-300
 }
 
+/* ------- MOVIES STYLES ------ */
+.movies--title {
+  @apply
+    text-gray-300
+    text-center
+    text-3xl
+    mt-6
+    mb-10
+    
+}
+
+.movies--popular-movies-container {
+    
+}
+
+/* ------- MOVIE CARD STYLES ------ */
+.movie-card--movie-container {
+  @apply
+    text-gray-300
+    text-center
+    px-3
+    pb-2
+    mb-6
+    border-b
+}
+
+.movie-card--poster-container {
+  @apply
+    flex
+    justify-center
+}
+
+.movie-card--poster {
+  @apply
+    w-2/3
+    h-2/3
+    rounded-lg
+}
+
+#movie-card--title {
+  @apply
+  text-3xl
+}
+
+.movie-card--description-container {
+  @apply
+    mt-7
+}
+
+.movie-card--description {
+  @apply
+    py-2
+}
 /* ------- FOOTER STYLES ------ */
 footer h3 {
   @apply
